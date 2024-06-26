@@ -37,7 +37,17 @@ function App() {
         alignItems: "center",
       }}
     >
-      <button onClick={handleClick}>{state ? "ON" : "OFF"}</button>
+      <button
+        style={{
+          fontSize: "30px",
+          height: "100px",
+          width: "100px",
+          borderRadius: "100px",
+        }}
+        onClick={handleClick}
+      >
+        {state ? "ON" : "OFF"}
+      </button>
     </div>
   );
 }
